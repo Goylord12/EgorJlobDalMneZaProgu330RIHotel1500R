@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.generator.HelloController">
+   <children>
+      <TextField fx:id="Text" editable="false" layoutX="17.0" layoutY="63.0" prefHeight="25.0" prefWidth="408.0" />
+      <CheckBox fx:id="CheckBoxUppercase" layoutX="20.0" layoutY="154.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="153.0" text="Заглавные символы" />
+      <CheckBox fx:id="CheckBoxLowercase" layoutX="20.0" layoutY="212.0" mnemonicParsing="false" text="Прописные символы" />
+      <CheckBox fx:id="CheckBoxNumbers" layoutX="20.0" layoutY="270.0" mnemonicParsing="false" text="Цифры" />
+      <CheckBox fx:id="CheckBoxSymbols" layoutX="20.0" layoutY="325.0" mnemonicParsing="false" text="Специальные символы" />
+      <Slider fx:id="SliderUppercase" layoutX="310.0" layoutY="154.0" majorTickUnit="10.0" minorTickCount="2" prefHeight="32.0" prefWidth="260.0" showTickLabels="true" />
+      <Slider fx:id="SliderLowercase" layoutX="310.0" layoutY="212.0" majorTickUnit="10.0" minorTickCount="2" prefHeight="32.0" prefWidth="260.0" showTickLabels="true" />
+      <Slider fx:id="SliderNumbers" layoutX="310.0" layoutY="270.0" majorTickUnit="10.0" minorTickCount="2" prefHeight="32.0" prefWidth="260.0" showTickLabels="true" />
+      <Slider fx:id="SliderSymbols" layoutX="310.0" layoutY="325.0" majorTickUnit="10.0" minorTickCount="2" prefHeight="32.0" prefWidth="260.0" showTickLabels="true" />
+      <TextField fx:id="TextFieldLengthPassword" layoutX="18.0" layoutY="393.0" prefHeight="25.0" prefWidth="153.0" />
+      <Label layoutX="20.0" layoutY="14.0" text="Генератор паролей">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="108.0" text="Выберите символы которые использовать">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="108.0" text="Выберите процент использования символов">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="365.0" text="Длина пароля">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="ButtonCopy" alignment="TOP_LEFT" layoutX="427.0" layoutY="54.0" mnemonicParsing="false" onAction="#ClickButtonCopy" prefHeight="44.0" prefWidth="161.0" style="-fx-background-color: 0000;" text="Копировать">
+         <font>
+            <Font name="Calibri" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="ButtonGenerator" alignment="TOP_LEFT" layoutX="197.0" layoutY="384.0" mnemonicParsing="false" onAction="#ClickButtonGenerator" prefHeight="44.0" prefWidth="195.0" style="-fx-background-color: 0000;" text="Сгенерировать">
+         <font>
+            <Font name="Calibri" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
